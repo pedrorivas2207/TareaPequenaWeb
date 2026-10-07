@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animales</title>
+</head>
+<body>
+
+    <h1>Animales de la protectora</h1>
+
+    {% for animal in animales %}
+        <h2>{{ animal.nombre }}</h2>
+        <p>Tipo: {{ animal.tipo }}</p>
+        <p>Cuidador: {{ animal.cuidador.username }}</p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
